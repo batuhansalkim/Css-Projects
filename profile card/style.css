@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    background: url(sky.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+}
+.card-header{
+    background: #2c3a47;
+    padding: 60px 40px;
+}
+.picture img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.picture{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg,#74b9ff, #e28341);
+    margin: auto;
+    border-radius: 50%;
+    animation: animasyon 2s linear infinite;
+    background-size: 200% 200%;
+}
+@keyframes animasyon{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.name{
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.desc{
+    font-size: 18px;
+    color:#18d4e5;
+}
+.sm{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sm a{
+    color: #f2f2f2;
+    width: 56px;
+    font-size: 22px;
+    transition:.3s linear ;
+}
+
+.sm a:hover{
+    color: #1846ff;
+}
+.contact-btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 50px;
+    color: #e66767;
+    border: 2px solid #f2f2f2;
+    border-radius: 6px;
+    margin-top: 16px;
+    transition: .3s linear;
+}
+
+.contact-btn:hover{
+    background: #37a0f7;
+    color: #f2f2f2;
+}
+.card-footer{
+    background-color: #f4f4f4;
+    padding: 50px 10px;
+}
+.numbers{
+    display: flex;
+    align-items: center;
+}
+
+.item{
+    flex:1;
+    font-size: 13px;
+}
+
+.item span{
+    display: block;
+    color: #2c3a47;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+

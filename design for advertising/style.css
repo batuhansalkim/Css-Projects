@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Orbitron&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color:  hsl(233, 47%, 7%);
+    margin: 20px;
+    color: #fff;
+}
+.container{
+   background-color: hsl(244, 38%, 16%);
+   text-align: center;
+   border-radius: 10px;
+   overflow: hidden;
+}
+.container .img{
+    height: 150px;
+    background-image: url(./images/image-header-mobile.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    
+}
+.img .overlay{
+    height: 100%;
+    background-color: hsla(277, 41%, 42%, 0.6);
+}
+
+.content-box{
+    font-family: "Inter",sans-serif;
+    padding: 35px 35px 0 35px;
+}
+
+.content-box h2 span{
+    color: hsl(277, 64%, 61%);
+}
+.content-box p{
+    font-size: 13px;
+    color: hsla(0, 0%, 100%, 0.5);
+    margin: 20px 0;
+    line-height: 1.6;
+}
+.content-box ul li{
+    margin: 25px 0;
+    font-family: "Lexend Deca", sans-serif;
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+.content-box ul li span{
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    display:block ;
+    color: #fff;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+.attribution{
+    margin: 20px;
+}
+.attribution a{
+    color: rgb(97, 248, 248);
+}
+
+@media screen and (min-width: 768px){
+    html,body{
+        height:calc(100%-20px);
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .container .img, .content-box{
+        width: 400px;
+    }
+    .container .img{
+        height: 100%;
+        background-size: cover;
+        background-image: url(./images/image-header-desktop.jpg);
+        background-position: top;
+    }
+    .container .content-box{
+        text-align: start;
+        box-sizing: border-box;
+        padding: 50px 70px 50px 50px ;
+    }
+    .container .content-box ul{
+        display: flex;
+        width:90%;
+        justify-content:space-between;
+    }
+}
+
+
